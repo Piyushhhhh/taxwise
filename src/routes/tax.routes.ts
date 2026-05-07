@@ -1,15 +1,15 @@
 import { Router } from 'express';
 import { z } from 'zod';
 import multer from 'multer';
-import { calculateTax, compareRegimes, calculateAdvanceTax } from '../services/tax.calculator.js';
-import { askTaxAdvisor } from '../services/ai.advisor.js';
-import { parseDocument } from '../services/document.parser.js';
-import { optimizeTax } from '../services/optimizer.js';
-import { decodeCTC } from '../services/ctc.calculator.js';
-import { simulateHike } from '../services/hike.simulator.js';
-import { prefillITR1 } from '../services/itr.prefill.js';
-import { calculateRSUTax } from '../services/rsu.calculator.js';
-import { parseRSUDocument } from '../services/rsu.parser.js';
+import { calculateTax, compareRegimes, calculateAdvanceTax } from '../services/tax.calculator';
+import { askTaxAdvisor } from '../services/ai.advisor';
+import { parseDocument } from '../services/document.parser';
+import { optimizeTax } from '../services/optimizer';
+import { decodeCTC } from '../services/ctc.calculator';
+import { simulateHike } from '../services/hike.simulator';
+import { prefillITR1 } from '../services/itr.prefill';
+import { calculateRSUTax } from '../services/rsu.calculator';
+import { parseRSUDocument } from '../services/rsu.parser';
 
 export const taxRouter = Router();
 

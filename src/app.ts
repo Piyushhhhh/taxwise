@@ -1,7 +1,7 @@
 import express from 'express';
 import { config } from 'dotenv';
 import path from 'path';
-import { taxRouter } from './routes/tax.routes.js';
+import { taxRouter } from './routes/tax.routes';
 import { ZodError } from 'zod';
 
 config();

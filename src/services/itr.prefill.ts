@@ -1,9 +1,7 @@
 import ExcelJS from 'exceljs';
 import path from 'path';
-import { fileURLToPath } from 'url';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const TEMPLATE_PATH = path.join(__dirname, '../../assets/ITR1_AY_25-26_V1.7.xlsm');
+const TEMPLATE_PATH = path.join(process.cwd(), 'assets', 'ITR1_AY_25-26_V1.7.xlsm');
 
 export interface ITRPrefillInput {
   first_name: string;
