@@ -1049,6 +1049,18 @@ th.tr{text-align:right}
 .chat-fab.open::after{display:none}
 .chat-fab.open .fab-icon{display:none}
 .chat-fab.open .fab-close{display:flex}
+.chat-fab::before{
+  content:'Ask AI';
+  position:absolute;right:calc(100% + 10px);top:50%;transform:translateY(-50%);
+  background:#1A1A24;border:1px solid rgba(245,158,11,.3);
+  color:#F59E0B;font-family:var(--fd);font-size:.72rem;font-weight:600;
+  white-space:nowrap;padding:5px 10px;border-radius:8px;
+  opacity:0;pointer-events:none;
+  transition:opacity 160ms ease;
+  box-shadow:0 4px 16px rgba(0,0,0,.4);
+}
+.chat-fab:hover::before{opacity:1}
+.chat-fab.open::before{display:none}
 
 .chat-window{
   position:fixed;bottom:96px;right:28px;z-index:999;

@@ -98,21 +98,6 @@ Upload your layoff separation agreement PDF. Gemini flags equity clauses, waiver
 
 ---
 
-## What Could Be Better (Roadmap)
-
-Honest UX gaps identified from the live site:
-
-| Issue | Impact | Fix |
-|---|---|---|
-| **Mobile layout broken** | Sidebar overlaps content on phones | Add hamburger menu + responsive drawer |
-| **No onboarding** | New users land on RSU Guide with no context | Add a 3-step tooltip tour on first visit |
-| **Chat bubble has no label** | Users don't know it's an AI advisor | Add "Ask AI" tooltip on hover |
-| **No keyboard shortcuts** | Power users have to click through menus | `Cmd+K` palette to jump between tools |
-| **No persistent state** | Refresh loses all entered data | Save inputs to localStorage |
-| **No shareable links** | Can't share a specific tool view | Add `?tab=rsu` URL params |
-
----
-
 ## Common Questions
 
 <details>
