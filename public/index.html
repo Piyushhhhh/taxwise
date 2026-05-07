@@ -1262,11 +1262,11 @@ th.tr{text-align:right}
 <!-- ══ NAV DRAWER ══ -->
 <div class="nav-drawer">
   <div class="nav-section-label">RSU & Equity</div>
-  <button class="nav-btn"    onclick="switchTab('rsuguide')" ><span class="nav-btn-icon">🛡️</span>RSU Guide</button>
+  <button class="nav-btn on" onclick="switchTab('rsuguide')" ><span class="nav-btn-icon">🛡️</span>RSU Guide</button>
   <button class="nav-btn"    onclick="switchTab('rsu')"      ><span class="nav-btn-icon">📊</span>RSU Tax</button>
   <div class="nav-sep"></div>
   <div class="nav-section-label">Tools</div>
-  <button class="nav-btn on" onclick="switchTab('calculate')"><span class="nav-btn-icon">🧮</span>Calculate Tax</button>
+  <button class="nav-btn"    onclick="switchTab('calculate')"><span class="nav-btn-icon">🧮</span>Calculate Tax</button>
   <button class="nav-btn"    onclick="switchTab('compare')"  ><span class="nav-btn-icon">⚖️</span>Compare Regimes</button>
   <button class="nav-btn"    onclick="switchTab('advance')"  ><span class="nav-btn-icon">📅</span>Advance Tax</button>
   <div class="nav-sep"></div>
@@ -1283,7 +1283,7 @@ th.tr{text-align:right}
   <div class="form-body">
 
     <!-- CALCULATE -->
-    <div id="panel-calculate" class="pane on">
+    <div id="panel-calculate" class="pane">
       <div class="upload-row">
         <div class="upload-btn" id="calc-upload-zone">
           <input type="file" id="calc-file-input" accept=".pdf,.jpg,.jpeg,.png,.webp" multiple />
@@ -1631,7 +1631,7 @@ th.tr{text-align:right}
     </div>
 
     <!-- RSU GUIDE NAV -->
-    <div id="panel-rsuguide" class="pane">
+    <div id="panel-rsuguide" class="pane on">
       <div class="slabel">Who are you?</div>
       <div class="guide-persona-wrap">
         <div class="guide-persona on" id="persona-india" onclick="setGuidePersona('india')">
@@ -1740,7 +1740,7 @@ th.tr{text-align:right}
 <div class="content">
 
   <!-- CALCULATE RESULT -->
-  <div id="right-calculate" class="rpane on">
+  <div id="right-calculate" class="rpane">
     <div id="calc-empty" class="empty">
       <div class="empty-ico">🧮</div>
       <div class="empty-t">Ready to calculate</div>
@@ -2092,7 +2092,7 @@ th.tr{text-align:right}
   </div>
 
   <!-- RSU GUIDE -->
-  <div id="right-rsuguide" class="rpane">
+  <div id="right-rsuguide" class="rpane on">
     <div style="max-width:800px">
 
       <!-- LIFECYCLE -->
